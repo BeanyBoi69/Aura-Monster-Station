@@ -1,0 +1,21 @@
+﻿- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitViltrumite
+  name: viltrumite jumpsuit
+  description: Totally here to help us.
+  components:
+  - type: Sprite
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitViltrumiteElite
+  name: viltrumite elite jumpsuit
+  description: You're probably about to die.
+  components:
+  - type: Sprite
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_elite.rsi
+  - type: Clothing
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_elite.rsi
