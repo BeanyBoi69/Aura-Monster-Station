@@ -1,20 +1,88 @@
-﻿- type: loadout
+﻿- type: job
+  id: Viltrumite
+  name: job-name-viltrumite
+  description: job-description-viltrumite
+  playTimeTracker: JobViltrumite
+  setPreference: false
+  startingGear: ViltrumiteLoadout
+  supervisors: job-supervisors-null
+  canBeAntag: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 500
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  - NanotrasenRepresentative
+  - Wizard
+  - NuclearOperative
+  - SyndicateAgent
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
+- type: job
+  id: ViltrumiteELite
+  name: job-name-viltrumite-elite
+  description: job-description-viltrumite-elite
+  playTimeTracker: JobViltrumiteElite
+  setPreference: false
+  startingGear: ViltrumiteEliteLoadout
+  supervisors: job-supervisors-null
+  canBeAntag: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 1500
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  - NanotrasenRepresentative
+  - Wizard
+  - NuclearOperative
+  - SyndicateAgent
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
+- type: job
+  id: GrandRegent
+  name: job-name-grand-regent
+  description: job-description-grand-regent
+  playTimeTracker: JobGrandRegent
+  setPreference: false
+  startingGear: ViltrumiteGrandRegentLoadout
+  supervisors: job-supervisors-null
+  canBeAntag: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 2000
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  - NanotrasenRepresentative
+  - Wizard
+  - NuclearOperative
+  - SyndicateAgent
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
+
+- type: loadout
   id: ViltrumiteLoadout
   equipment:
     jumpsuit: ClothingUniformJumpsuitViltrumite
     shoes: ClothingShoesColorWhite
-  special:
-  - !type:AddImplantSpecial
-    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
 
 - type: loadout
   id: ViltrumiteEliteLoadout
   equipment:
     jumpsuit: ClothingUniformJumpsuitViltrumiteElite
     shoes: ClothingShoesColorWhite
-  special:
-  - !type:AddImplantSpecial
-    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
 
 - type: loadout
   id: ViltrumiteGrandRegentLoadout
@@ -22,6 +90,4 @@
     jumpsuit: ClothingUniformJumpsuitViltrumiteGrandRegent
     shoes: ClothingShoesColorWhite
   # neck: ClothingNeckCloakEmperor TODO
-  special:
-  - !type:AddImplantSpecial
-    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
