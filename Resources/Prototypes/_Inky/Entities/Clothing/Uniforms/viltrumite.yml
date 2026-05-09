@@ -19,3 +19,14 @@
     sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_elite.rsi
   - type: Clothing
     sprite: _Inky/Clothing/Uniforms/Jumpsuit/viltrumite_elite.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGrandRegent
+  name: grand regent jumpsuit
+  description: Perfect for ruling over space-fascists.
+  components:
+  - type: Sprite
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/grand_regent_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Inky/Clothing/Uniforms/Jumpsuit/grand_regent_jumpsuit.rsi
