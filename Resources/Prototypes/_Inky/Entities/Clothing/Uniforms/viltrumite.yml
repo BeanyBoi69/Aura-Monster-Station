@@ -22,7 +22,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitGrandRegent
+  id: ClothingUniformJumpsuitViltrumiteGrandRegent
   name: grand regent jumpsuit
   description: Perfect for ruling over space-fascists.
   components:
