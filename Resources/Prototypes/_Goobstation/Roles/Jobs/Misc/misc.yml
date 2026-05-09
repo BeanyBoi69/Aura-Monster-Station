@@ -35,9 +35,10 @@
 - type: startingGear
   id: ConquestGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorWhite
+    # jumpsuit: ClothingUniformJumpsuitColorWhite #Inky - Viltrumite Expansion
+    jumpsuit: ClothingUniformViltrumiteElite #Inky - Viltrumite Expansion
     gloves: ClothingHandsGlovesConquestUnremovable
-    outerClothing: ClothingOuterArmourInvisible
+   # outerClothing: ClothingOuterArmourInvisible #Inky - Viltrumite Expansion
 
 # G-Man
 

@@ -1,0 +1,27 @@
+﻿- type: loadout
+  id: ViltrumiteLoadout
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitViltrumite
+    shoes: ClothingShoesColorWhite
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
+- type: loadout
+  id: ViltrumiteEliteLoadout
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitViltrumiteElite
+    shoes: ClothingShoesColorWhite
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]
+
+- type: loadout
+  id: ViltrumiteGrandRegentLoadout
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitViltrumiteGrandRegent
+    shoes: ClothingShoesColorWhite
+  # neck: ClothingNeckCloakEmperor TODO
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, NutrimentPumpImplant, SpaceProofImplant ]

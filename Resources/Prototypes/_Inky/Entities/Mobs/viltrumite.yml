@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: MobHuman
+  id: MobHumanViltrumiteBase
+  name: viltrumite
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: DeathSquadMember
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    damage:
+      types:
+        Blunt: 65 #65
+        Structural: 90
