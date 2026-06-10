@@ -1278,7 +1278,7 @@
   maxLimit: 1
   loadouts:
   - CaptainShoes
-  - CaptainleatherShoes
+  - CaptainLeatherShoes
   - CaptainShoesHighheelBoots
 
 - type: loadoutGroup
