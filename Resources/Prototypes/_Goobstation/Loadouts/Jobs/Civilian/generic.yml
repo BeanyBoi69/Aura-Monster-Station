@@ -90,7 +90,7 @@
 - type: loadout
   id: DarkBlueEnvirosuit
   equipment:
-    head: ClothingHeadEnvirosuitColorDarkBlue
+    head: ClothingUniformEnvirosuitColorDarkBlue
   effects:
   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
     species:
