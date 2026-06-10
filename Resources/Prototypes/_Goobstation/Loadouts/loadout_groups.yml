@@ -37,7 +37,6 @@
   maxLimit: 1
   loadouts:
   - ScientistEnvirohelm
-  - RoboticistEnvirohelm
 
 - type: loadoutGroup
   id: ScientistEnvirosuit
@@ -46,7 +45,6 @@
   maxLimit: 1
   loadouts:
   - ScientistEnvirosuit
-  - RoboticistEnvirosuit
 
 - type: loadoutGroup
   id: ScientistEnvirogloves
@@ -54,7 +52,6 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - RoboticistEnvirogloves
   - WhiteEnvirogloves
 
 # Roboticist
@@ -252,7 +249,7 @@
   loadouts:
   - CargoTechnicianEnvirohelm
   - MailCarrierEnvirohelm
-  - CourierEnvirosuit
+  - CourierEnvirohelm
 
 - type: loadoutGroup
   id: CargoTechnicianEnvirosuit
@@ -509,7 +506,7 @@
   maxLimit: 1
   loadouts:
   - WardenEnvirohelm
-  - PrisonGuard
+  - PrisonGuardEnvirohelm
 
 - type: loadoutGroup
   id: WardenEnvirosuit
@@ -518,7 +515,7 @@
   maxLimit: 1
   loadouts:
   - WardenEnvirosuit
-  - PrisonGuard
+  - PrisonGuardEnvirosuit
 
 - type: loadoutGroup
   id: WardenEnvirogloves
@@ -839,7 +836,6 @@
   maxLimit: 1
   loadouts:
   - DarkGreyEnvirogloves
-  - GreyEnvirogloves
   - BlackEnvirogloves
   - PurpleEnvirogloves
   - WhiteEnvirogloves
@@ -1628,4 +1624,4 @@
   - ShaftMinerJumpsuit
   - ShaftMinerJumpskirt
   - ShaftMinerOveralls
-  - ShaftMJ
+  - ShaftMinerMJ
