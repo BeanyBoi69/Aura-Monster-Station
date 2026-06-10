@@ -37,6 +37,7 @@
   maxLimit: 1
   loadouts:
   - ScientistEnvirohelm
+  - RoboticistEnvirohelm
 
 - type: loadoutGroup
   id: ScientistEnvirosuit
@@ -45,6 +46,7 @@
   maxLimit: 1
   loadouts:
   - ScientistEnvirosuit
+  - RoboticistEnvirosuit
 
 - type: loadoutGroup
   id: ScientistEnvirogloves
@@ -52,6 +54,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
+  - RoboticistEnvirogloves
   - WhiteEnvirogloves
 
 # Roboticist
@@ -249,6 +252,7 @@
   loadouts:
   - CargoTechnicianEnvirohelm
   - MailCarrierEnvirohelm
+  - CourierEnvirosuit
 
 - type: loadoutGroup
   id: CargoTechnicianEnvirosuit
@@ -258,6 +262,7 @@
   loadouts:
   - CargoTechnicianEnvirosuit
   - MailCarrierEnvirosuit
+  - CourierEnvirosuit
 
 - type: loadoutGroup
   id: CargoTechnicianEnvirogloves
@@ -407,55 +412,59 @@
 
 # Security Officer
 
-#- type: loadoutGroup
-#  id: SecurityOfficerEnvirohelm
-#  name: loadout-group-security-officer-envirohelm
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - SecurityOfficerEnvirohelm
-#
-#- type: loadoutGroup
-#  id: SecurityOfficerEnvirosuit
-#  name: loadout-group-security-officer-envirosuit
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - SecurityOfficerEnvirosuit
-#
-#- type: loadoutGroup
-#  id: SecurityOfficerEnvirogloves
-#  name: loadout-group-security-officer-envirogloves
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - BlackEnvirogloves
-#
-## Security Cadet
-#
-#- type: loadoutGroup
-#  id: SecurityCadetEnvirohelm
-#  name: loadout-group-security-cadet-envirohelm
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - SecurityOfficerEnvirohelm
-#
-#- type: loadoutGroup
-#  id: SecurityCadetEnvirosuit
-#  name: loadout-group-security-cadet-envirosuit
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - SecurityOfficerEnvirosuit
-#
-#- type: loadoutGroup
-#  id: SecurityCadetEnvirogloves
-#  name: loadout-group-security-cadet-envirogloves
-#  minLimit: 1
-#  maxLimit: 1
-#  loadouts:
-#  - BlackEnvirogloves
+- type: loadoutGroup
+  id: SecurityOfficerEnvirohelm
+  name: loadout-group-security-officer-envirohelm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityOfficerEnvirohelm
+  - SecurityOfficerEnvirohelmGrey
+  - SecurityOfficerEnvirohelmBlue
+
+- type: loadoutGroup
+  id: SecurityOfficerEnvirosuit
+  name: loadout-group-security-officer-envirosuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityOfficerEnvirosuit
+  - SecurityOfficerEnvirosuitGrey
+  - SecurityOfficerEnvirosuitBlue
+
+- type: loadoutGroup
+  id: SecurityOfficerEnvirogloves
+  name: loadout-group-security-officer-envirogloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlackEnvirogloves
+
+# Security Cadet
+
+- type: loadoutGroup
+  id: SecurityCadetEnvirohelm
+  name: loadout-group-security-cadet-envirohelm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityOfficerEnvirohelm
+
+- type: loadoutGroup
+  id: SecurityCadetEnvirosuit
+  name: loadout-group-security-cadet-envirosuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityOfficerEnvirosuit
+
+- type: loadoutGroup
+  id: SecurityCadetEnvirogloves
+  name: loadout-group-security-cadet-envirogloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlackEnvirogloves
 
 # Detective
 
@@ -500,6 +509,7 @@
   maxLimit: 1
   loadouts:
   - WardenEnvirohelm
+  - PrisonGuard
 
 - type: loadoutGroup
   id: WardenEnvirosuit
@@ -508,6 +518,7 @@
   maxLimit: 1
   loadouts:
   - WardenEnvirosuit
+  - PrisonGuard
 
 - type: loadoutGroup
   id: WardenEnvirogloves
@@ -515,7 +526,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - BlackEnvirogloves
+  - CombatEnvirogloves
 
 # Head of Personnel
 
@@ -776,6 +787,23 @@
   maxLimit: 1
   loadouts:
   - GreyEnvirohelm
+  - BlackEnvirohelm
+  - PurpleEnvirohelm
+  - WhiteEnvirohelm
+  - DarkGreenEnvirohelm
+  - MaroonEnvirohelm
+  - BlueEnvirohelm
+  - PinkEnvirohelm
+  - DarkBlueEnvirohelm
+  - LightBrownEnvirohelm
+  - RedEnvirohelm
+  - OrangeEnvirohelm
+  - YellowEnvirohelm
+  - GreenEnvirohelm
+  - BrownEnvirohelm
+  - TransEnvirohelm
+  - BlackPinkEnvirohelm
+  - BlackPinkAltEnvirohelm
 
 - type: loadoutGroup
   id: AssistantEnvirosuit
@@ -784,6 +812,25 @@
   maxLimit: 1
   loadouts:
   - GreyEnvirosuit
+  - BlackEnvirosuit
+  - PurpleEnvirosuit
+  - WhiteEnvirosuit
+  - DarkGreenEnvirosuit
+  - MaroonEnvirosuit
+  - BlueEnvirosuit
+  - PinkEnvirosuit
+  - DarkBlueEnvirosuit
+  - LightBrownEnvirosuit
+  - RedEnvirosuit
+  - OrangeEnvirosuit
+  - YellowEnvirosuit
+  - GreenEnvirosuit
+  - BrownEnvirosuit
+  - TransEnvirosuit
+  - BlackPinkEnvirosuit
+  - BlackPinkAltEnvirosuit
+  - NegativeEnvirosuit
+  - EnviroslacksTider
 
 - type: loadoutGroup
   id: AssistantEnvirogloves
@@ -792,6 +839,11 @@
   maxLimit: 1
   loadouts:
   - DarkGreyEnvirogloves
+  - GreyEnvirogloves
+  - BlackEnvirogloves
+  - PurpleEnvirogloves
+  - WhiteEnvirogloves
+  - DarkGreenEnvirogloves
 
 # Musician
 
@@ -880,6 +932,9 @@
   maxLimit: 1
   loadouts:
   - WhiteEnvirohelm
+  - EnviroslacksHelmBlue
+  - EnviroslacksHelmRed
+  - EnviroslacksHelmGreen
 
 - type: loadoutGroup
   id: LawyerEnvirosuit
@@ -888,6 +943,9 @@
   maxLimit: 1
   loadouts:
   - Enviroslacks
+  - EnviroslacksBlue
+  - EnviroslacksRed
+  - EnviroslacksGreen
 
 - type: loadoutGroup
   id: LawyerEnvirogloves
@@ -916,6 +974,7 @@
   minLimit: 0
   loadouts:
   - ClothingNeckScarfStripedCentcom
+  - NanotrasenRepresentativeEnsemble
 
 - type: loadoutGroup
   id: NanotrasenRepresentativeBackpack
@@ -980,7 +1039,157 @@
   loadouts:
   - BlackEnvirogloves
 
+# BSO
+- type: loadoutGroup
+  id: BlueshieldOfficerHead
+  name: loadout-group-bso-head
+  minLimit: 0
+  loadouts:
+  - BlueshieldOfficerHeadSwatHelmet
+  - BlueshieldOfficerBeret
+  - BlueshieldOfficerHeadCowboy
+  - BlueshieldOfficerGoidaHelmet
+
+- type: loadoutGroup
+  id: BlueshieldOfficerBackpack
+  name: loadout-group-bso-backpack
+  loadouts:
+  - BlueshieldOfficerBackpack
+  - BlueshieldOfficerSatchel
+  - BlueshieldOfficerDuffel
+  - BlueshieldOfficerMessenger
+
+- type: loadoutGroup
+  id: BlueshieldOfficerJumpsuit
+  name: loadout-group-bso-jumpsuit
+  loadouts:
+  - BlueshieldOfficerInnerBlueshieldSuit
+  - BlueshieldOfficerInnerBlueshieldSkirt
+  - BlueshieldOfficerInnerBlueshieldShirt
+
+- type: loadoutGroup
+  id: BlueshieldOfficerOuter
+  name: loadout-group-bso-outer
+  loadouts:
+  - BlueshieldOfficerOuterBlueshieldArmorVest
+  - BlueshieldOfficerOuterBlueshieldArmoredJacket
+  - BlueshieldOfficerOuterBlueshieldCowboyVest
+  - BlueshieldOfficerOuterWinterBlueshield
+
+- type: loadoutGroup
+  id: BlueshieldOfficerNeck
+  name: loadout-group-bso-neck
+  minLimit: 0
+  loadouts:
+  - BlueshieldOfficerOuterBlueshieldMantle
+  - BlueshieldOfficerEnsemble
+
+- type: loadoutGroup
+  id: BlueshieldOfficerMask
+  name: loadout-group-bso-mask
+  minLimit: 0
+  loadouts:
+  - BlueshieldOfficerMaskLollypop
+
+- type: loadoutGroup
+  id: BlueshieldOfficerShoes
+  name: loadout-group-bso-shoes
+  loadouts:
+  - JackBoots
+  - BlackCowboyBoots
+  - SnowjacksBso
+
+- type: loadoutGroup
+  id: BlueshieldOfficerEnvirohelm
+  name: loadout-group-bso-envirohelm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlueshieldOfficerEnvirohelm
+
+- type: loadoutGroup
+  id: BlueshieldOfficerEnvirosuit
+  name: loadout-group-bso-envirosuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlueshieldOfficerEnvirosuit
+
+- type: loadoutGroup
+  id: BlueshieldOfficerEnvirogloves
+  name: loadout-group-bso-envirogloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CombatEnvirogloves
+
+- type: loadoutGroup
+  id: BlueshieldOfficerGloves
+  name: loadout-group-bso-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CombatGloves
+
+# Career Trainer
+
+- type: loadoutGroup
+  id: NanotrasenTrainerHead
+  name: loadout-group-nct-head
+  minLimit: 0
+  loadouts:
+  - NanotrasenTrainerHat
+  - NanotrasenTrainerBeret
+
+- type: loadoutGroup
+  id: NanotrasenTrainerBackpack
+  name: loadout-group-nct-backpack
+  loadouts:
+  - NanotrasenTrainerSatchel
+  - NanotrasenTrainerBackpack
+  - NanotrasenTrainerDuffel
+
+- type: loadoutGroup
+  id: NanotrasenTrainerJumpsuit
+  name: loadout-group-nct-jumpsuit
+  loadouts:
+  - NanotrasenTrainerJumpsuit
+  - NanotrasenTrainerJumpskirt
+
+- type: loadoutGroup
+  id: NanotrasenTrainerOuterClothing
+  name: loadout-group-nct-outerclothing
+  minLimit: 0
+  loadouts:
+  - NanotrasenTrainerCoat
+
+- type: loadoutGroup
+  id: NanotrasenTrainerGloves
+  name: loadout-group-nct-gloves
+  loadouts:
+  - NanotrasenTrainerGloves
+
+- type: loadoutGroup
+  id: NanotrasenTrainerBelt
+  name: loadout-group-nct-belt
+  minLimit: 0
+  loadouts:
+  - NanotrasenTrainerClipboard
+
+- type: loadoutGroup
+  id: NanotrasenTrainerShoes
+  name: loadout-group-nct-shoes
+  loadouts:
+  - NanotrasenTrainerBoots
+  - NanotrasenTrainerShoes
+
 # Reporter
+
+- type: loadoutGroup
+  id: ReporterOuterClothing
+  name: loadout-group-reporter-outerclothing
+  loadouts:
+  - NoPro
 
 - type: loadoutGroup
   id: ReporterEnvirohelm
@@ -1013,9 +1222,9 @@
   name: loadout-group-security-neck
   minLimit: 0
   loadouts:
-  - Bodycam
-#  - ClothingNeckCWPSec # inky
-#  - ClothingNeckMantleVeteranSecurity # inky
+  - Bodycam # Goobstation - Body cameras
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity
 
 #honkops
 
@@ -1063,6 +1272,13 @@
   - CaptainGloves
 
 - type: loadoutGroup
+  id: CaptainShoes
+  loadouts:
+  - CaptainShoes
+  - CaptainleatherShoes
+  - CaptainShoesHighheelBoots
+
+- type: loadoutGroup
   id: CaptainMask
   name: loadout-group-captain-mask
   minLimit: 0
@@ -1085,7 +1301,7 @@
   loadouts:
   - RoboticistJumpsuit
   - RoboticistJumpskirt
-  - ResearchMJ
+  - ResearchMJ # goob
 
 - type: loadoutGroup
   id: RoboticistBackpack
@@ -1229,6 +1445,14 @@
   maxLimit: 1
   loadouts:
   - CombatEnvirogloves
+
+- type: loadoutGroup
+  id: HeadofSecurityGloves
+  name: loadout-group-head-of-security-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CombatGloves
 # Brigmedic
 
 - type: loadoutGroup
@@ -1299,6 +1523,14 @@
 #  loadouts:
 #  - SecurityMeleeKnife
 
+- type: loadoutGroup
+  id: SecurityGloves
+  name: loadout-group-security-gloves
+  loadouts:
+  - SecurityGloves
+  - SecurityGlovesRed
+  - SecurityGlovesFingerless
+
 # Plasmamen
 
 - type: loadoutGroup
@@ -1316,7 +1548,7 @@
   loadouts:
    - VirologistJumpsuit
    - VirologistJumpskirt
-   - VirologistMJ
+   - VirologistMJ # goobin
 
 - type: loadoutGroup
   id: VirologistBackpack
@@ -1393,3 +1625,4 @@
   - ShaftMinerJumpsuit
   - ShaftMinerJumpskirt
   - ShaftMinerOveralls
+  - ShaftMJ

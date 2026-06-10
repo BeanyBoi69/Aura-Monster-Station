@@ -84,6 +84,8 @@
   id: NanotrasenRepresentativeFancyJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasenRepresentativeFancy
+    - !type:GroupLoadoutEffect
+      proto: RespectedRep
 
 - type: loadout
   id: NanotrasenRepresentativeJumpskirt

@@ -27,7 +27,7 @@
   - !type:GroupLoadoutEffect
     proto: MasterHoS
   equipment:
-    shoes: ClothingShoesBootsJackAdvancedFilled
+    shoes: ClothingShoesBootsJackAdvanced
 
 - type: loadout
   id: HeadofSecurityEnvirosuit

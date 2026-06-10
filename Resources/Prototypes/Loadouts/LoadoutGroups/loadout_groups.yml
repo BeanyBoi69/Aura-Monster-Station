@@ -114,7 +114,11 @@
   # </Trauma>
   - EmergencyNitrogen
   - EmergencyOxygen
+  - EmergencyPlasma
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasma # Goobstation
+  - EmergencyWaterVapor # Delta-V
+  - EmergencySilicon
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -124,6 +128,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAWaterVapor
 
 # vox get a nitrogen tank, other species get nothing
 - type: loadoutGroup
@@ -187,6 +192,7 @@
   - CaptainOuterClothing
   # - CaptainWintercoat
   - CaptainJacket # Goobstation
+  - CaptainWintercoatUnarmored #Goobstation
 
 #- type: loadoutGroup
 #  id: CaptainJobTrinkets
@@ -252,6 +258,7 @@
   - AncientJumpsuit
   - RainbowJumpsuit
   - RainbowJumpskirt
+  - OverallsJumpsuit
  # goob changes start
   - GreyMJ
   - BlackMJ
@@ -269,6 +276,9 @@
   - BrownMJ
   - MaroonMJ
   - QuarterzipJumpsuit
+  - ContractorJumpsuit
+  - ContractorJumpsuitTac
+  - JumpsuitRecruit
  # goob changes end
 
 - type: loadoutGroup
@@ -923,6 +933,7 @@
   - ChiefEngineerTurtleneckSkirt
   - ChiefEngineerMJ # goob
   - CESummerShirt # goob
+  - ChiefEngineerNT # goob
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -1158,6 +1169,7 @@
   - SeniorResearcherJumpsuit
   - SeniorResearcherJumpskirt
   - ResearchMJ # goob
+  - ScientistFormal # goob
 
 - type: loadoutGroup
   id: ScientistBackpack
@@ -1343,6 +1355,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - SecurityJudoBelt # Goobstation - Martial Arts
 
 - type: loadoutGroup
   id: SecurityOuterClothing
