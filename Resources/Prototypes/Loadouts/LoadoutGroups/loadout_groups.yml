@@ -999,6 +999,7 @@
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
   - EngiMJ # goob
+  - StationEngineerJumpsuitCasual # goob
 
 - type: loadoutGroup
   id: StationEngineerBackpack
