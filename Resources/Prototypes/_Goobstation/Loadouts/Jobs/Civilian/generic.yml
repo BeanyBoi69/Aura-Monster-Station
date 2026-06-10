@@ -306,7 +306,7 @@
 - type: loadout
   id: NegativeEnvirosuit
   equipment:
-    jumpsuit: ClothingUniformEnviroslacksNegative
+    jumpsuit: ClothingUniformEnvirosuitEnviroslacksNegative
   effects:
   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
     species:
