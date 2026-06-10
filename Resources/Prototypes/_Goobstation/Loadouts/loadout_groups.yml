@@ -1279,7 +1279,7 @@
   loadouts:
   - CaptainShoes
   - CaptainLeatherShoes
-  - CaptainShoesHeels
+  - CaptainHeels
 
 - type: loadoutGroup
   id: CaptainMask
