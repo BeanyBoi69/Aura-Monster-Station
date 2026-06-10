@@ -181,6 +181,7 @@ loadout-group-captain-envirohelm = Captain envirohelm
 loadout-group-captain-envirosuit = Captain envirosuit
 loadout-group-captain-envirogloves = Captain envirogloves
 loadout-group-captain-gloves = Captain gloves
+loadout-group-captain-shoes = Captain shoes
 
 
 # Salvage Specialist
@@ -213,6 +214,7 @@ loadout-group-zookeeper-head = Zookeeper hat
 # Boxer
 loadout-group-boxer-envirohelm = Boxer envirohelm
 loadout-group-boxer-envirosuit = Boxer envirosuit
+loadout-group-boxer-helmet = Boxer helmet
 
 # Misc
 loadout-group-plasma-tank = Plasma tank
