@@ -125,4 +125,4 @@
   - !type:GroupLoadoutEffect
     proto: SeniorOfficer
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMilitarySecurity
+    jumpsuit: ClothingUniformJumpsuitMilitarySecuritySeniorOfficer
