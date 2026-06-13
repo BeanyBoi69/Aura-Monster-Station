@@ -1344,6 +1344,8 @@
   - SergeantUniform # Trauma
   - SergeantSkirt # Trauma
 #  - VeteranOfficerBlackJumpsuit # Goobstation # inky
+  - SecurityMJ # Goob
+  - SecurityMJSenior # Goob
 
 - type: loadoutGroup
   id: SecurityBackpack
