@@ -1456,6 +1456,7 @@
   loadouts:
   - RedJumpsuit
   - RedJumpskirt
+  - RedMJ #Goob
 
 #- type: loadoutGroup
 #  id: SecurityCadetJobTrinkets
