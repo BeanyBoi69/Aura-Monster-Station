@@ -774,6 +774,19 @@
   maxLimit: 1
   loadouts:
   - WhiteGloves
+  - BlackGloves
+  - RedGloves
+
+- type: loadoutGroup
+  id: MimeShoes
+  name: loadout-group-mime-shoes
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - WhiteShoes
+  - BlackShoes
+  - RedShoes
+  - LaceupShoes
 
 # Assistant
 
@@ -1002,7 +1015,7 @@
   id: NanotrasenRepresentativeShoes
   name: loadout-group-ntr-shoes
   loadouts:
-  - NanotrasenRepresentativeBoots
+  - LaceupShoes
   - NanotrasenRepresentativeShoes
   - NanotrasenRepresentativeHeels
 
@@ -1274,7 +1287,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - CaptainShoes
+  - LaceupShoes
   - CaptainLeatherShoes
   - CaptainHeels
 
@@ -1528,9 +1541,9 @@
   id: SecurityGloves
   name: loadout-group-security-gloves
   loadouts:
-  - SecurityGloves
-  - SecurityGlovesRed
-  - SecurityGlovesFingerless
+  - BlackGloves
+  - RedGloves
+  - FingerlessGloves
 
 # Plasmamen
 
