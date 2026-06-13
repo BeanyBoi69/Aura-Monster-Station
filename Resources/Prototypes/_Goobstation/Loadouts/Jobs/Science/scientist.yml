@@ -22,3 +22,11 @@
   id: ResearchMJ
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryScientist
+
+
+- type: loadout
+  id: SeniorResearcherMJ
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySeniorResearcher

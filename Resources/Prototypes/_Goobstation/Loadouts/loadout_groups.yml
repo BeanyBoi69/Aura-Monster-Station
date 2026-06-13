@@ -987,6 +987,7 @@
   loadouts:
   - NanotrasenRepresentativeJumpsuit
   - NanotrasenRepresentativeJumpskirt
+  - NTRMJ
   - NanotrasenRepresentativeFancyJumpsuit
 
 - type: loadoutGroup
@@ -1616,6 +1617,7 @@
   - SalvageSpecialistJumpsuit
   - SalvageSpecialistJumpskirt
   - SalvageSpecialistOveralls
+  - SalvageSpecialistMJ
 
 - type: loadoutGroup
   id: ShaftMinerJumpsuit
