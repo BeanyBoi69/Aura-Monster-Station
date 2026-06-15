@@ -50,7 +50,6 @@
   storage:
     back:
     - Flash
-    - ClothingMaskGasSecurity # Goobstation
 
 - type: chameleonOutfit
   id: WardenChameleonOutfit
