@@ -95,3 +95,52 @@
 #    proto: VeteranOfficer
 #  equipment:
 #    jumpsuit: ClothingUniformJumpsuitVeteranSecurity
+
+- type: loadout
+  id: SecurityOfficerEnvirosuitBlue
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitSecBlue
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: SecurityOfficerEnvirohelmBlue
+  equipment:
+    head: ClothingHeadEnvirohelmSecBlue
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: SecurityOfficerEnvirosuitGrey
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitSecGrey
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: SecurityOfficerEnvirohelmGrey
+  equipment:
+    head: ClothingHeadEnvirohelmSecGrey
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: SecurityMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySecurity
+
+- type: loadout
+  id: SecurityMJSenior
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySecuritySeniorOfficer

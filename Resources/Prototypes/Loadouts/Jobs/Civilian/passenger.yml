@@ -215,6 +215,24 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryColorMaroon
 
+- type: loadout
+  id: ContractorJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractor
+
+
+- type: loadout
+  id: ContractorJumpsuitTac
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractorTac
+
+- type: loadout
+  id: JumpsuitRecruit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Noob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRecruitNT
 
 
 # service jumpsuit - putting it here because frontier's only service jumpsuits are hydroponics and general lmao # goob change btw
