@@ -1,13 +1,13 @@
 - type: markingsGroup
   parent: Undergarments
   id: Reptilian
-  onlyGroupWhitelisted: true
+  #onlyGroupWhitelisted: true #Inky - Debaldening
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 1 #inky
+      limit: 1 #Inky - Debaldening
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 1 #inky
+      limit: 0
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
@@ -265,7 +265,6 @@
   components:
   - type: VisualOrganMarkings
     hideableLayers:
-    - enum.HumanoidVisualLayers.Hair #inky
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
