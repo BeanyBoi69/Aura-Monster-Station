@@ -4,10 +4,10 @@
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 #inky
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 0
+      limit: 1 #inky
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
@@ -260,11 +260,12 @@
     - enum.HumanoidVisualLayers.Tail
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHeadBald, OrganReptilianExternal ] # Trauma - bald
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganReptilianExternal ] # Inky - not bald
   id: OrganReptilianHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
+    - enum.HumanoidVisualLayers.Hair #inky
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
