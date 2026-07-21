@@ -241,6 +241,13 @@
   id: OrganDecapoidHead
   name: "decapoid head"
   parent: [OrganBaseHead, OrganDecapoidExternal]
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.FacialHair
+
+
 
 - type: entity
   id: OrganDecapoidArmLeft
