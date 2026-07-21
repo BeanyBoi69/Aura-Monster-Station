@@ -115,7 +115,7 @@
   id: OrganAbductorTorso
 
 - type: entity
-  parent: [ OrganBaseHeadBald, OrganAbductorExternal ] # baldest mfers there are
+  parent: [ OrganBaseHead, OrganAbductorExternal ] # Inky -  The Debaldening
   id: OrganAbductorHead
 
 - type: entity

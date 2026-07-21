@@ -4,7 +4,7 @@
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
-      onlyGroupWhitelisted: true
+     # onlyGroupWhitelisted: true # Inky -  The Debaldening
       required: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 1

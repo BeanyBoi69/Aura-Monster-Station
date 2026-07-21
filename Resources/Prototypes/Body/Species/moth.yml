@@ -4,10 +4,10 @@
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 # Inky -  The Debaldening
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 0
+      limit: 1 # Inky -  The Debaldening
       required: false
     enum.HumanoidVisualLayers.Wings: # Trauma - ITS NOT A FUCKING TAIL
       limit: 1
@@ -278,8 +278,7 @@
   id: OrganMothTorso
 
 - type: entity
-  parent: [ OrganBaseHeadBald, OrganMothExternal ] # Trauma - bald
-  id: OrganMothHead
+  parent: [ OrganBaseHead, OrganMothExternal ] # Inky -  The Debaldening
   components:
   - type: VisualOrganMarkings
     hideableLayers:
