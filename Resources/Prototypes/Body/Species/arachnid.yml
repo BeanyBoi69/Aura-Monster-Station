@@ -1,12 +1,12 @@
 - type: markingsGroup
   parent: Undergarments
   id: Arachnid
-  onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 # Inky - The Debaldening
       required: false
     enum.HumanoidVisualLayers.FacialHair:
+      onlyGroupWhitelisted: true # Inky - The Debaldening
       limit: 0
       required: false
     enum.HumanoidVisualLayers.Wings: # Trauma - was Tail
@@ -197,8 +197,12 @@
   id: OrganArachnidTorso
 
 - type: entity
-  parent: [ OrganBaseHeadBald, OrganArachnidExternal ] # Trauma - bald
+  parent: [ OrganBaseHead, OrganArachnidExternal ] #Inky - The Debaldening
   id: OrganArachnidHead
+  components: #Inky - The Debaldening
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganArachnidExternal ]
