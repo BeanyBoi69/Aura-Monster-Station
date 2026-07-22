@@ -1,13 +1,14 @@
 - type: markingsGroup
   parent: Undergarments
   id: Moth
-  onlyGroupWhitelisted: true
+  # onlyGroupWhitelisted: true # Inky - The Debaldening
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1 # Inky -  The Debaldening
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 1 # Inky -  The Debaldening
+      limit: 0
+      onlyGroupWhitelisted: true # Inky - The Debaldening
       required: false
     enum.HumanoidVisualLayers.Wings: # Trauma - ITS NOT A FUCKING TAIL
       limit: 1
