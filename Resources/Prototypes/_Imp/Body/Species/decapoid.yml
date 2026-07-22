@@ -241,7 +241,7 @@
   id: OrganDecapoidHead
   name: "decapoid head"
   parent: [OrganBaseHead, OrganDecapoidExternal]
-  components:
+  components: # Inky -  The Debaldening
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.Hair

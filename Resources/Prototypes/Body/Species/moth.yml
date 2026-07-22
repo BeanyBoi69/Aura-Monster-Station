@@ -283,8 +283,8 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
-    - enum.HumanoidVisualLayers.Hair
-    - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.Hair # Inky -  The Debaldening
+    - enum.HumanoidVisualLayers.FacialHair # Inky -  The Debaldening
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]
