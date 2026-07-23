@@ -113,6 +113,10 @@ public abstract partial class SharedGrapplingGunSystem : VirtualController
         RefreshJointRelay((args.Embedded, embedComp));
 
         _joints.RefreshRelay(args.Weapon.Value, jointCompGrapple);
+
+        // inky
+        RaiseLocalEvent(uid, new GrappleEmbedCompletedEvent(args.Embedded, args.Weapon.Value, args.Shooter));
+        // /inky
     }
 
     private void OnGrapplingShot(EntityUid uid, GrapplingGunComponent component, ref GunShotEvent args)
@@ -454,10 +458,6 @@ public abstract partial class SharedGrapplingGunSystem : VirtualController
             {
                 joint.LocalAnchorA = Vector2.Zero;
                 _joints.SetRelay(hook, entity.Owner, jointComp);
-
-                // inky
-                RaiseLocalEvent(hook, new GrappleEmbedCompletedEvent(args.Embedded, args.Weapon.Value, args.Shooter));
-                // /inky
             }
         }
     }
