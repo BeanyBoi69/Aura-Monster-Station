@@ -201,6 +201,11 @@
     verbIcon: Interface/VerbIcons/cutlery.svg.192dpi.png
     sound: !type:SoundPathSpecifier
       path: /Audio/Items/Culinary/chop.ogg
+    # inky
+    refineResult:
+    - id: 220Bandaid
+      amount: 1
+    # /inky
 
 - type: entity
   abstract: true
