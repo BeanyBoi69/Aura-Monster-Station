@@ -16,13 +16,13 @@ public sealed partial class RoundEndCreditsSystem : EntitySystem
 {
     [Dependency] private IUserInterfaceManager _ui = default!;
     [Dependency] private IClyde _clyde = default!;
-    [Dependency] private ILinkAccountManager _linkAccount = default!;
+    // [Dependency] private ILinkAccountManager _linkAccount = default!; inky
     [Dependency] private IResourceCache _cache = default!;
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private IConfigurationManager _cfg = default!;
 
     // inky
-    [Dependency] private PrototypeManager _proto = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
     // /inky
 
     private float _timer;
@@ -61,7 +61,7 @@ public sealed partial class RoundEndCreditsSystem : EntitySystem
 
         var shoutout = "John Nanotrasen";
         // <inky>
-        if (_proto.TryIndex(datasetId, out var dataset))
+        if (_proto.TryIndex(datasetId, out _))
             shoutout = _random.Pick(_proto.Index(datasetId));
         // var patrons = _linkAccount.GetPatrons();
         // if (patrons.Count != 0)

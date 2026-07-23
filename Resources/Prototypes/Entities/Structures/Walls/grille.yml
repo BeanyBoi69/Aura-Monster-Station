@@ -4,12 +4,12 @@
   name: grille
   description: A flimsy framework of iron rods.
   components:
-  # <Trauma>
-  - type: Penetratable # Goobstation - Better snipers
-    penetrateDamage: 10
-  # </Trauma>
-  - type: Transform # required
-    noRot: true
+    # <Trauma>
+    - type: Penetratable # Goobstation - Better snipers
+      penetrateDamage: 10
+    # </Trauma>
+    - type: Transform # required
+      noRot: true
     - type: MeleeSound
       soundGroups:
         Brute:
@@ -94,8 +94,6 @@
             True: { visible: True }
             False: { visible: False }
     - type: AnimationPlayer
-    - type: Penetratable # Goobstation - Better snipers
-      penetrateDamage: 10
 
 - type: entity
   id: ClockworkGrille

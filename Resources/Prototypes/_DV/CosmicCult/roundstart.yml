@@ -4,10 +4,6 @@
   parent: BaseGameRule
   id: CosmicCult
   components:
-  # inky
-  - type: DynamicRuleCost
-    cost: 225
-  # /inky
   - type: CosmicCultRule
   - type: LoadMapRule
     mapPath: /Maps/_DV/Nonstations/cosmicvoid.yml
