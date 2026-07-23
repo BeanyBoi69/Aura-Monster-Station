@@ -19,10 +19,15 @@
 
 # Traitor
 
+# inky
 - type: storeCategory
   id: DiscountedItems
   name: store-discounted-items
   priority: 200
-  # inky
   evil: true
-  # /inky
+# /inky
+
+- type: storeCategory
+  id: UplinkSkills
+  name: store-category-skills
+  priority: 12

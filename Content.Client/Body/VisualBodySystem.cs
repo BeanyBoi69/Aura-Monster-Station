@@ -5,12 +5,12 @@ using System.Linq;
 using Content.Client.DisplacementMap;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
+using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Body;
@@ -18,7 +18,6 @@ namespace Content.Client.Body;
 public sealed partial class VisualBodySystem : SharedVisualBodySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
-    [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private DisplacementMapSystem _displacement = default!;
     [Dependency] private MarkingManager _marking = default!;
     [Dependency] private SpriteSystem _sprite = default!;
@@ -81,6 +80,16 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
         if (ent.Comp.SecondLayer != null && ent.Comp.SecondData != null && _sprite.LayerMapTryGet(target, ent.Comp.SecondLayer, out var addIndex, false))
             _sprite.LayerSetData(target, addIndex, ent.Comp.SecondData);
         // /inkymed
+
+        var displacement = ent.Comp.Displacement;
+        if (displacement != null && ProtoMan.Resolve(displacement, out var displacementProto))
+        {
+            _displacement.TryAddDisplacement(displacementProto.Displacement,
+                (target, Comp<SpriteComponent>(target)),
+                index,
+                ent.Comp.Layer,
+                out _);
+        }
     }
 
     private void RemoveVisual(Entity<VisualOrganComponent> ent, EntityUid target)
@@ -96,6 +105,9 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
         if (ent.Comp.SecondLayer != null && _sprite.LayerMapTryGet(target, ent.Comp.SecondLayer, out var addIndex, false))
             _sprite.LayerSetRsiState(target, addIndex, RSI.StateId.Invalid);
         // /inkymed
+
+        _displacement.EnsureDisplacementIsNotOnSprite((target, Comp<SpriteComponent>(target)), ent.Comp.Layer);
+
     }
 
     private void OnMarkingsGotInserted(Entity<VisualOrganMarkingsComponent> ent, ref OrganGotInsertedEvent args)
@@ -162,7 +174,7 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
         if (!censorNudity)
             yield break;
 
-        var group = _prototype.Index(ent.Comp.MarkingData.Group);
+        var group = ProtoMan.Index(ent.Comp.MarkingData.Group);
         foreach (var layer in ent.Comp.MarkingData.Layers)
         {
             if (!group.Limits.TryGetValue(layer, out var layerLimits))
