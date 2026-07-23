@@ -31,7 +31,7 @@ public sealed partial class IceCubeSystem : SharedIceCubeSystem
     /// <summary>
     /// Damage types that can break ice cubes.
     /// </summary>
-    public static readonly HashSet<ProtoId<DamageTypePrototype>> BreakDamages = new() { "Blunt", "Slash", "Piercing", "Ballistic", "Heat" };
+    public static readonly HashSet<ProtoId<DamageTypePrototype>> BreakDamages = new() { "Blunt", "Slash", "Piercing", /* "Ballistic", */ "Heat" }; // inky edit kill second amendment
     private const string IceCubeFixture = "ice-cube-fixture";
 
     public override void Initialize()

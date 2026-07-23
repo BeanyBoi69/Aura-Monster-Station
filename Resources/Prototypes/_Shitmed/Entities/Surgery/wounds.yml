@@ -106,13 +106,13 @@
   - type: BleedInflicter
     severityThreshold: 0
     scalingSpeed: 0.8
-
-- type: entity
-  parent: Piercing
-  id: Ballistic
-  components:
-  - type: Wound
-    damageType: Ballistic
+# inky edit you are a disgrace to my kind // inky edit kill second amendment
+#- type: entity
+#  parent: Piercing
+#  id: Ballistic
+#  components:
+#  - type: Wound
+#    damageType: Ballistic
 
 - type: entity
   id: ArmorPiercing
