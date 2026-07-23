@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 40 # Trauma
+        Piercing: 40
         Structural: 15
 
 
@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 3 # Trauma, was 10
+        Piercing: 3 # Trauma, was 10
         Structural: 5 # Trauma, was 15
 
 - type: entity
@@ -62,7 +62,7 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 2 # Trauma, was 7
+        Piercing: 2 # Trauma, was 7
         # Heat: 3 # Trauma
   - type: IgnitionSource
     ignited: true
@@ -112,7 +112,7 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 1.5
+        Piercing: 1.5
         Slash: 1.5
 
 - type: entity
@@ -197,7 +197,7 @@
       types:
       # <Trauma>
       #  Radiation: 5
-        Ballistic: 4 # was 5
+        Piercing: 4 # was 5
       armorPenetration: 0.5
       # </Trauma>
 
@@ -226,7 +226,7 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 25
+        Piercing: 25
         Structural: 5
 
 - type: entity

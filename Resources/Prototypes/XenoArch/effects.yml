@@ -1327,7 +1327,6 @@
       types:
         Blunt: -100
         Piercing: -100
-        Ballistic: -100 # Trauma
         Slash: -100
         Heat: -100
         Cold: -100

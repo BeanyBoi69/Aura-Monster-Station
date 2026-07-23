@@ -27,7 +27,6 @@
         Blunt: 0.3
         Slash: 0.3
         Piercing: 0.3
-        Ballistic: 0.3
         Heat: 0.3
         Radiation: 0.75
         Caustic: 0.75
@@ -61,7 +60,6 @@
         Blunt: 0.3
         Slash: 0.3
         Piercing: 0.3
-        Ballistic: 0.3
         Heat: 0.3
         Radiation: 0.75
         Caustic: 0.75
@@ -95,7 +93,6 @@
         Blunt: 0.3
         Slash: 0.3
         Piercing: 0.3
-        Ballistic: 0.3
         Heat: 0.3
         Radiation: 0.75
         Caustic: 0.75
@@ -182,7 +179,6 @@
         Blunt: 0.7
         Slash: 0.7
         Piercing: 0.7
-        Ballistic: 0.7
         Heat: 0.8
 
 - type: entity

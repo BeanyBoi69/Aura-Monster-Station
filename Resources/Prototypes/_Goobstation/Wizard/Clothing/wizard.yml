@@ -48,7 +48,6 @@
         Blunt: 0.6
         Slash: 0.6
         Piercing: 0.6
-        Ballistic: 0.6
         Heat: 0.6
         Caustic: 0.1
         Radiation: 0.1
@@ -80,7 +79,6 @@
         Blunt: 0.6
         Slash: 0.6
         Piercing: 0.6
-        Ballistic: 0.6
         Heat: 0.6
         Radiation: 0.1
         Caustic: 0.1
@@ -324,7 +322,6 @@
         Blunt: 0.45
         Slash: 0.45
         Piercing: 0.45
-        Ballistic: 0.45
         Heat: 0.45
         Radiation: 0
         Caustic: 0.1
