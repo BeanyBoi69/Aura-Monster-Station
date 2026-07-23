@@ -21,6 +21,10 @@ public sealed partial class RoundEndCreditsSystem : EntitySystem
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private IConfigurationManager _cfg = default!;
 
+    // inky
+    [Dependency] private PrototypeManager _proto = default!;
+    // /inky
+
     private float _timer;
     private EndRoundCreditsControl? _creditsContainer;
     private BoxContainer? _exitContainer;
