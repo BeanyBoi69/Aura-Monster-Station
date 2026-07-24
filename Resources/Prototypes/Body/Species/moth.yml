@@ -223,8 +223,8 @@
         - MobMask
         layer:
         - MobLayer
-  - type: DashAction # dark souls
-    actionProto: ActionDashMoth
+#  - type: DashAction # dark souls // tackling added to moths gg
+#    actionProto: ActionDashMoth
   # /inky
 
 
