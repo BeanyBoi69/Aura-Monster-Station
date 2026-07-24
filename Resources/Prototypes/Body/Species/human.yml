@@ -154,7 +154,7 @@
       group: Human
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganHumanExternal ]
+  parent: [ OrganBaseTorso, OrganHumanExternal ] # inky - removed OrganBaseTorsoSexed
   id: OrganHumanTorso
 
 - type: entity
