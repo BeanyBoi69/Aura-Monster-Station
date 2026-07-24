@@ -22,6 +22,10 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
     [Dependency] private MarkingManager _marking = default!;
     [Dependency] private SpriteSystem _sprite = default!;
 
+    // inky
+    [Dependency] private EntityQuery<SpriteComponent> _spriteComp = default!;
+    // /inky
+
     public override void Initialize()
     {
         base.Initialize();
@@ -73,6 +77,11 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
 
     private void ApplyVisual(Entity<VisualOrganComponent> ent, EntityUid target)
     {
+        // inky
+        if (!_spriteComp.TryComp(target, out var sprite))
+            return;
+        // /inky
+
         if (_sprite.LayerMapTryGet(target, ent.Comp.Layer, out var index, false)) // Trauma - don't log for missing layers
             _sprite.LayerSetData(target, index, ent.Comp.Data); // inkymed change - shortened
 
@@ -85,7 +94,7 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
         if (displacement != null && ProtoMan.Resolve(displacement, out var displacementProto))
         {
             _displacement.TryAddDisplacement(displacementProto.Displacement,
-                (target, Comp<SpriteComponent>(target)),
+                (target, /* Comp<SpriteComponent>(target) */ sprite), // inky edit
                 index,
                 ent.Comp.Layer,
                 out _);
@@ -94,6 +103,11 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
 
     private void RemoveVisual(Entity<VisualOrganComponent> ent, EntityUid target)
     {
+        // inky
+        if (!_spriteComp.TryComp(target, out var sprite))
+            return;
+        // /inky
+
         // <Trauma> - removed parts have their body's skin colour. not enabled for eyes yet until it supports an iris layer
         if (ent.Comp.Data.Color is {} color && !HasComp<InternalOrganComponent>(ent))
             _sprite.SetColor(ent.Owner, color);
@@ -106,7 +120,7 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
             _sprite.LayerSetRsiState(target, addIndex, RSI.StateId.Invalid);
         // /inkymed
 
-        _displacement.EnsureDisplacementIsNotOnSprite((target, Comp<SpriteComponent>(target)), ent.Comp.Layer);
+        _displacement.EnsureDisplacementIsNotOnSprite((target, /* Comp<SpriteComponent>(target) */ sprite), ent.Comp.Layer); // inky edit
 
     }
 
