@@ -2,8 +2,8 @@
   parent: BaseItem
   id: 220Bandaid
   name: CURSE OF 220
-  description: You should not have seen this.
-  suffix: 220 DO NOT SPAWN
+  description: 220
+  suffix: 220
   components:
   - type: Sprite
     sprite: _Inky/Shitpost/220.rsi

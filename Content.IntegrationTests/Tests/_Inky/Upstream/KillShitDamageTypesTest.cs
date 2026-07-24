@@ -12,9 +12,9 @@ namespace Content.IntegrationTests.Tests._Inky.Upstream;
 
 public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x palantirgpt bravest soldier wasted 65 gallons of watter for this, be greatful.
 {
-    private const string BannedDamageType = "Ballistic"; // todo inky a list
+    private static readonly List<string> BannedDamageType = ["Ballistic"];
 
-    private static readonly BindingFlags MemberFlags =
+    private static readonly BindingFlags MemberFlags = // NO IDEA WHAT THIS IS
         BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static;
 
     [Test]
@@ -31,7 +31,7 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
 
             foreach (var compType in compFactory.AllRegisteredTypes)
             {
-                object? instance;
+                object instance;
                 try
                 {
                     instance = compFactory.GetComponent(compType);
@@ -58,7 +58,7 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
                 if (sysType.IsAbstract)
                     continue;
 
-                object? sysInstance;
+                object sysInstance;
                 try
                 {
                     var method = getEntitySystemGeneric.MakeGenericMethod(sysType);
@@ -72,14 +72,15 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
                 InspectInstance(sysInstance, sysType, "EntitySystem", fail); // goida
             }
 
-            Assert.That(fail, Is.Empty,
-                $"fucking '{BannedDamageType}' exists in one of the systems! "
+            Assert.That(fail,
+                Is.Empty,
+                $"fucking '{string.Join(", ", BannedDamageType)}' exists in one of the systems! "
                 + string.Join("\n", fail.Distinct().OrderBy(x => x))
             );
         });
     }
 
-    private static void InspectInstance(object? instance, Type ownerType, string kind, List<string> fail)
+    private static void InspectInstance(object instance, Type ownerType, string kind, List<string> fail)
     {
         if (instance is null)
             return;
@@ -88,7 +89,7 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
 
         foreach (var field in type.GetFields(MemberFlags))
         {
-            object? value;
+            object value;
             try
             {
                 value = field.GetValue(field.IsStatic ? null : instance);
@@ -109,7 +110,7 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
             if (prop.GetMethod is null)
                 continue;
 
-            object? value;
+            object value;
             try
             {
                 value = prop.GetValue(prop.GetMethod.IsStatic ? null : instance);
@@ -123,21 +124,27 @@ public sealed partial class KillShitDamageTypesTest : GameTest // israelgpt x pa
         }
     }
 
-    private static void CheckMember(object? value, string location, List<string> fail)
+    private static void CheckMember(object value, string location, List<string> fail)
     {
         switch (value)
         {
             case DamageSpecifier dmg:
-                if (dmg.DamageDict.ContainsKey(BannedDamageType))
-                    fail.Add($"{location} shat itself with '{BannedDamageType}'");
+                foreach (var damageType in BannedDamageType)
+                {
+                    if (dmg.DamageDict.ContainsKey(damageType))
+                        fail.Add($"{location} shat itself with '{damageType}'");
+                }
                 break;
 
             case DamageModifierSet mod:
-                if (mod.Coefficients.ContainsKey(BannedDamageType))
-                    fail.Add($"{location} shat itself with '{BannedDamageType}'");
+                foreach (var damageType in BannedDamageType)
+                {
+                    if (mod.Coefficients.ContainsKey(damageType))
+                        fail.Add($"{location} shat itself with '{damageType}'");
 
-                if (mod.FlatReduction.ContainsKey(BannedDamageType))
-                    fail.Add($"{location} shat itself with '{BannedDamageType}'");
+                    if (mod.FlatReduction.ContainsKey(damageType))
+                        fail.Add($"{location} shat itself with '{damageType}'");
+                }
                 break;
         }
     }
